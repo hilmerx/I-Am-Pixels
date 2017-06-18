@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>---I AM PIXELS---</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>  
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;}   html,body{overflow:hidden; background: #aaa} 
+    #backbutton{
+ background-color: #333; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    /*top: 100vh;*/
+
+    border-top-left-radius: 33px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    line-height: 20px
+
+}#backbutton2{
+ background-color: #333; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    /*text-align: left;*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*right: 100px;*/
+
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+    /*top: 100vh;*/
+
+    border-top-right-radius: 33px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 20px
+
+}
+#backbutton:hover{
+
+background-color: #555; /* Green */
+
+}
+#backbutton:focus {
+    outline:0;
+}
+
+#backbutton2:hover{
+
+background-color: #555; /* Green */
+
+}
+#backbutton2:focus {
+    outline:0;
+}
+
+</style>
+  </head>
+  <body>
+  <button id="backbutton" onclick="freeze()" type="button">&nbsp;SIZE ME UP!</button>
+  <button id="backbutton2" onclick="grey()" type="button">GREY!&nbsp;&nbsp;</button>
+  </body>
+</html>
